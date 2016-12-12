@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20161207024913) do
     t.integer  "category_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.index ["category_id", "created_at"], name: "index_books_on_category_id_and_created_at"
     t.index ["category_id"], name: "index_books_on_category_id"
   end
 
@@ -47,6 +48,7 @@ ActiveRecord::Schema.define(version: 20161207024913) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.index ["review_id"], name: "index_comments_on_review_id"
+    t.index ["user_id", "review_id", "created_at"], name: "index_comments_on_user_id_and_review_id_and_created_at"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
@@ -56,6 +58,7 @@ ActiveRecord::Schema.define(version: 20161207024913) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["review_id"], name: "index_likes_on_review_id"
+    t.index ["user_id", "review_id", "created_at"], name: "index_likes_on_user_id_and_review_id_and_created_at"
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
@@ -66,16 +69,18 @@ ActiveRecord::Schema.define(version: 20161207024913) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["book_id"], name: "index_rates_on_book_id"
+    t.index ["user_id", "book_id", "created_at"], name: "index_rates_on_user_id_and_book_id_and_created_at"
     t.index ["user_id"], name: "index_rates_on_user_id"
   end
 
   create_table "relationships", force: :cascade do |t|
     t.integer  "follower_id"
     t.integer  "followed_id"
-    t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.index ["user_id"], name: "index_relationships_on_user_id"
+    t.index ["followed_id"], name: "index_relationships_on_followed_id"
+    t.index ["follower_id", "followed_id"], name: "index_relationships_on_follower_id_and_followed_id", unique: true
+    t.index ["follower_id"], name: "index_relationships_on_follower_id"
   end
 
   create_table "requests", force: :cascade do |t|
@@ -85,6 +90,8 @@ ActiveRecord::Schema.define(version: 20161207024913) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["book_id"], name: "index_requests_on_book_id"
+    t.index ["user_id", "book_id", "created_at"], name: "index_requests_on_user_id_and_book_id_and_created_at"
+    t.index ["user_id", "created_at"], name: "index_requests_on_user_id_and_created_at"
     t.index ["user_id"], name: "index_requests_on_user_id"
   end
 
@@ -96,6 +103,7 @@ ActiveRecord::Schema.define(version: 20161207024913) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.index ["book_id"], name: "index_reviews_on_book_id"
+    t.index ["user_id", "book_id", "created_at"], name: "index_reviews_on_user_id_and_book_id_and_created_at"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 

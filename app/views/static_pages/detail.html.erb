@@ -1,0 +1,55 @@
+<div id = "templatemo_content_right">
+  <div class = "col-md-12">
+    <div class = "col-md-5 img_detail">
+      <%= link_to image_tag("templatemo_image_01.jpg") %>
+    </div>
+    <div class = "col-md-7 detail_product">
+      <h3><%= t "name_book" %></h3>
+      <p><%= t "Author" %></p>
+      <p><%= t "date_publish" %></p>
+      <p><%= t "num_page" %></p>
+      <div class = "icon_button">
+        <a href = "" title = "Favorite">
+          <i class = "fa fa-heart" aria-hidden = "true"></i>
+        </a>
+        <a href = "" title = "read">
+          <i class = "fa fa-check" aria-hidden = "true"></i>
+        </a>
+        <a href = "" title = "reading">
+          <i class = "fa fa-book" aria-hidden = "true"></i>
+        </a>
+      </div>
+      <button id = "select_review" type = "button" class = "btn btn-info btn-lg"
+        data-toggle = "modal" data-target = "#myModal"><%= t "open" %></button>
+    </div>
+  </div>
+</div>
+<div class = "col-sm-12">
+  <div class = "">
+    <div class = "modal fade" id = "myModal" role = "dialog">
+      <div class = "modal-dialog">
+        <div class = "modal-content">
+          <div class = "">
+            <div class = "review col-md-12">
+              <form action = "" method = "POST" role = "form" id = "form_review">
+                <h2><%= t "name_form" %></h2>
+                <div class = "form-group">
+                  <label for = ""><%= t "content" %></label>
+                  <textarea></textarea>
+                </div>
+                <button id = "click_but" type = "submit" class = "btn btn-primary">
+                  <%= t "button" %>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class = "modal-footer">
+            <button type = "button" class = "btn btn-default"
+              data-dismiss = "modal">
+              <%= t "close" %></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
