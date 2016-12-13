@@ -1,15 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
   <head>
-    <title><%= t "book" %></title>
-    <%= csrf_meta_tags %>
-
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
+    <title><%= t "Book_Review" %></title>
     <%= stylesheet_link_tag "application", media: "all",
       "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+    <%= csrf_meta_tags %>
   </head>
-
   <body>
-    <%= yield %>
+    <div id = "templatemo_container">
+      <div id = "templatemo_menu">
+        <%= render "layouts/header" %>
+      </div>
+      <div id = "templatemo_content">
+        <div id = "templatemo_content_left" class = "col-md-4">
+          <%= render "layouts/left_bar" %>
+        </div>
+        <div class = "col-md-8" >
+          <%= yield %>
+        </div>
+      </div>
+      <div id = "templatemo_footer">
+        <%= render "layouts/footer" %>
+      </div>
+    </div>
   </body>
 </html>
