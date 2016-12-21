@@ -9,8 +9,8 @@ body{
   color: #ffffff;
   background: #4b4743;
 }
-a:link, a:visited { color: #e6e154; text-decoration: none; font-weight: bold;}
-a:active, a:hover { color: #e6e154; text-decoration: underline;}
+a: link, a: visited { color: #e6e154; text-decoration: none; font-weight: bold;}
+a: active, a: hover { color: #e6e154; text-decoration: underline;}
 p{
   margin: 0px;
   padding: 0px;
@@ -92,7 +92,7 @@ img{
   text-decoration: none;
   color: #969547;
 }
-#templatemo_menu li a:hover, #templatemo_menu li .current{
+#templatemo_menu li a: hover, #templatemo_menu li .current{
   color: #fcf88e;
 }
 /* end of menu*/
@@ -105,7 +105,7 @@ img{
   margin: 0;
   background: url(templatemo_header_bg.jpg) no-repeat;
 }
-#templatemo_header a,a:hover{
+#templatemo_header a,a: hover{
   color: #ffffff;
 }
 #templatemo_header #templatemo_special_offers{
@@ -146,16 +146,16 @@ img{
   padding: 0 20px;
 }
 #templatemo_content #templatemo_content_left{
-  margin-top:20px;
+  margin-top: 20px;
   float: left;
   padding: 10px;
   background-color: #171716;
   border: 1px solid #212120;
 }
 #templatemo_content #templatemo_content_right{
-  margin-top:20px;
+  margin-top: 20px;
   float: right;
-  width:100%;
+  width: 100%;
 }
 #templatemo_content_left .templatemo_content_left_section{
   clear: both;
@@ -182,9 +182,9 @@ img{
   font-weight: bold;
   text-decoration: none;
   color: #969547;
-  font-size:14px;
+  font-size: 14px;
 }
-.templatemo_content_left_section li a:hover, .templatemo_content_left_section li .current{
+.templatemo_content_left_section li a: hover, .templatemo_content_left_section li .current{
   color: #fcf88e;
 }
 #templatemo_content_right .templatemo_product_box{
@@ -239,7 +239,7 @@ img{
 }
 .product_info{
   float: right;
-  width:55%;
+  width: 55%;
 }
 .product_info p{
   margin-bottom: 15px;
@@ -255,7 +255,7 @@ img{
   border-top: 1px solid #25211e;
   color: #999;
   background-color: #111110;
-  margin-top:58% !important;
+  margin-top: 58% !important;
 }
 #templatemo_footer a{
   color: #fff;
@@ -263,58 +263,58 @@ img{
 }
 /* end of footer */
 .item_menu{
-  float:right;
+  float: right;
 }
 .img_detail img{
   width: 200px;
   height: 250px;
 }
 .clr{
-  clear:both;
+  clear: both;
 }
 .product_item{
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 .detail_product{
   .icon_button{
-  margin-top:50px;
+  margin-top: 50px;
   }
   a{
-  margin-right:20px;
+  margin-right: 20px;
   }
 }
 .detail_product a i{
-  font-size:30px;
-  color:white;
+  font-size: 30px;
+  color: white;
 }
-.detail_product a i:hover{
-  color:red;
+.detail_product a i: hover{
+  color: red;
 }
 .review{
-  margin-top:30px;
+  margin-top: 30px;
   h2{
-  background:none !important;
-   text-align:center;
+  background: none !important;
+   text-align: center;
   }
   .form-group label{
-  display:block;
+  display: block;
   }
   .form-group textarea{
   width: 100%;
   height: 200px;
-  color:black;
+  color: black;
   }
 }
 .navbar-form{
   margin-top: -7px;
 }
 #form_review{
-  color:black;
+  color: black;
   textarea{
-  font-size:13px;
+  font-size: 13px;
   }
   label{
-  font-size:14px;
+  font-size: 14px;
   }
 }
 #select_review{
@@ -322,4 +322,90 @@ img{
   line-height: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+#signup_btn, #login_btn{
+  padding: 3px 10px;
+  margin-top: -5px;
+  font-size: 15px;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+.signup_input, .login_input{
+  width: 80%;
+  display: block;
+}
+.signup_label{
+  color: #cbc750;
+  display: block;
+  margin-left: 0px;
+}
+.login_label{
+  color: black;
+}
+.remember{
+  color: black;
+  display: block;
+
+}
+.signup_btn{
+  margin-top: 20px;
+}
+.login_btn{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.check_box{
+  margin-left: 0px !important;
+}
+.remember{
+  padding-left: 20px;
+  padding-top: 3px;
+}
+.new_user{
+  color: black;
+  display: inline;
+  a{
+   padding: 0px !important;
+  }
+  margin-top: 20px;
+}
+.modal-header{
+  color: black;
+}
+.alert-success{
+  background-color: none !important;
+}
+.alert-danger{
+  background-color: none !important;
+}
+.signup{
+  margin-left: 150px;
+}
+#error_explanation{
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+.field_with_errors{
+  @extend .has-error;
+  .form-control{
+    color: $state-danger-text;
+  }
+}
+#templatemo_menu ul .item_link a: hover{
+  background-color: black !important;
+}
+#templatemo_menu ul .item_link a{
+  width: 100%;
+}
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }

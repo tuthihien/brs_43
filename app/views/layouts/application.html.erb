@@ -1,27 +1,30 @@
 <!DOCTYPE>
 <html>
   <head>
-    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
-    <title><%= t "Book_Review" %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= t "book_review" %></title>
     <%= stylesheet_link_tag "application", media: "all",
       "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div id = "templatemo_container">
-      <div id = "templatemo_menu">
+    <div id="templatemo_container">
+      <div id="templatemo_menu">
         <%= render "layouts/header" %>
       </div>
-      <div id = "templatemo_content">
-        <div id = "templatemo_content_left" class = "col-md-4">
+      <div id="templatemo_content">
+        <div id="templatemo_content_left" class="col-md-4">
           <%= render "layouts/left_bar" %>
         </div>
-        <div class = "col-md-8" >
+        <div class="col-md-8" >
+          <% flash.each do |message_type, message| %>
+            <div class="alert alert-<%= message_type %>"><%= message %></div>
+          <% end %>
           <%= yield %>
         </div>
       </div>
-      <div id = "templatemo_footer">
+      <div id="templatemo_footer">
         <%= render "layouts/footer" %>
       </div>
     </div>
