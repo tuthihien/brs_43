@@ -36,3 +36,5 @@ en:
   please_log_in: "Please log in"
   user_not_found: "User not found"
   you_not_admin: "You are not admin"
+  save: "Save"
+  create: "Create"

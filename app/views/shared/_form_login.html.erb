@@ -5,12 +5,7 @@
   <%= f.label :password, class: "login_label"  %>
   <%= f.password_field :password, required: true, class: "login_input" %>
 
-  <%= f.label :remember_me, class: "checkbox inline login_label" do %>
-    <%= f.check_box :remember_me, class: "check_box" %>
-    <span class="remember"><%= t "remember" %></span>
-
-    <%= f.submit t("log in"), class: "btn btn-primary login_btn" %>
-  <% end %>
+  <%= f.submit t("log_in"), class: "btn btn-primary login_btn" %>
 
   <p class="new_user"><%= link_to t("sign_up"), signup_path %></p>
 <% end %>
