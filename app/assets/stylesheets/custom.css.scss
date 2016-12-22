@@ -9,8 +9,8 @@ body{
   color: #ffffff;
   background: #4b4743;
 }
-a: link, a: visited { color: #e6e154; text-decoration: none; font-weight: bold;}
-a: active, a: hover { color: #e6e154; text-decoration: underline;}
+a:link, a:visited { color: #e6e154; text-decoration: none; font-weight: bold;}
+a:active, a:hover { color: #e6e154; text-decoration: underline;}
 p{
   margin: 0px;
   padding: 0px;
@@ -92,7 +92,7 @@ img{
   text-decoration: none;
   color: #969547;
 }
-#templatemo_menu li a: hover, #templatemo_menu li .current{
+#templatemo_menu li a:hover, #templatemo_menu li .current{
   color: #fcf88e;
 }
 /* end of menu*/
@@ -105,7 +105,7 @@ img{
   margin: 0;
   background: url(templatemo_header_bg.jpg) no-repeat;
 }
-#templatemo_header a,a: hover{
+#templatemo_header a,a:hover{
   color: #ffffff;
 }
 #templatemo_header #templatemo_special_offers{
@@ -184,7 +184,7 @@ img{
   color: #969547;
   font-size: 14px;
 }
-.templatemo_content_left_section li a: hover, .templatemo_content_left_section li .current{
+.templatemo_content_left_section li a:hover, .templatemo_content_left_section li .current{
   color: #fcf88e;
 }
 #templatemo_content_right .templatemo_product_box{
@@ -287,7 +287,7 @@ img{
   font-size: 30px;
   color: white;
 }
-.detail_product a i: hover{
+.detail_product a i:hover{
   color: red;
 }
 .review{
@@ -394,7 +394,7 @@ img{
     color: $state-danger-text;
   }
 }
-#templatemo_menu ul .item_link a: hover{
+#templatemo_menu ul .item_link a:hover{
   background-color: black !important;
 }
 #templatemo_menu ul .item_link a{

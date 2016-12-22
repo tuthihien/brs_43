@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: [:new, :create]
   before_action :admin_user, only: :destroy
-  before_action :load_user, only: [:new, :show, :edit]
+  before_action :load_user, only: [:update, :show, :edit]
 
   def index
-    @users = User.scope_by_date.paginate page: params[:page], Settings.per_page
+    @users = User.scope_by_date.paginate(page: params[:page]).limit Settings.per_page
   end
 
   def create
