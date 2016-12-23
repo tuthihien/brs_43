@@ -2,19 +2,19 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title><%= t "book_review" %></title>
+    <title><%= full_title yield :title %></title>
     <%= stylesheet_link_tag "application", media: "all",
       "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div id="templatemo_container">
-      <div id="templatemo_menu">
+    <div id="templatemo-container">
+      <div id="templatemo-menu">
         <%= render "layouts/header" %>
       </div>
-      <div id="templatemo_content">
-        <div id="templatemo_content_left" class="col-md-4">
+      <div id="templatemo-content">
+        <div id="templatemo-content-left" class="col-md-4">
           <%= render "layouts/left_bar" %>
         </div>
         <div class="col-md-8" >
@@ -24,7 +24,7 @@
           <%= yield %>
         </div>
       </div>
-      <div id="templatemo_footer">
+      <div id="templatemo-footer">
         <%= render "layouts/footer" %>
       </div>
     </div>

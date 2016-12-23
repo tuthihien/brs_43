@@ -1,11 +1,11 @@
 <%= form_for :session, url: login_path do |f| %>
-  <%= f.label :email, class: "login_label" %>
-  <%= f.email_field :email, required: true, class: "login_input" %>
+  <%= f.label :email, class: "login-label" %>
+  <%= f.email_field :email, required: true, class: "login-input" %>
 
-  <%= f.label :password, class: "login_label"  %>
-  <%= f.password_field :password, required: true, class: "login_input" %>
+  <%= f.label :password, class: "login-label"  %>
+  <%= f.password_field :password, required: true, class: "login-input" %>
 
-  <%= f.submit t("log_in"), class: "btn btn-primary login_btn" %>
+  <%= f.submit t("log_in"), class: "btn btn-primary login-btn" %>
 
-  <p class="new_user"><%= link_to t("sign_up"), signup_path %></p>
+  <p class="new-user"><%= link_to t("sign_up"), signup_path %></p>
 <% end %>

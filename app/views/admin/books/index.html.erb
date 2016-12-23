@@ -1,0 +1,26 @@
+<div class="col-md-12 admin-cate">
+  <%= link_to t("add_book"), new_admin_book_path, class: "btn btn-primary" %>
+  <table>
+    <tr>
+      <th class="title_th"><%= t "title_book" %></th>
+      <th class="title_th"><%= t "author" %></th>
+      <th class="title_th"><%= t "num_page" %></th>
+      <th class="title_th"><%= t "image" %></th>
+      <th colspan="2"><%= t "action" %></th>
+    </tr>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book.author %></td>
+        <td><%= book.num_page %></td>
+        <td class="img_view" ><%= image_tag book.image %></td>
+        <td><%= link_to t("edit"), edit_admin_book_path(book) %></td>
+        <td>
+          <%= link_to t("delete"), admin_book_path(book), method: :delete,
+            data: {confirm: t("answer_del")}%>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+  <%= will_paginate @books_admin %>
+</div>
