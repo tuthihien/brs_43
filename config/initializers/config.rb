@@ -3,7 +3,6 @@ Config.setup do |config|
   config.const_name = "Settings"
   Bundler.require(*Rails.groups)
 
-
   # Ability to remove elements of the array set in earlier loaded settings file. For example value: '--'.
   #
   # config.knockout_prefix = nil

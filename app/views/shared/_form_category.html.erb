@@ -1,0 +1,12 @@
+<% provide :title, t("add_category") %>
+<h3><%= t "add_category" %></h3>
+<div class = "row">
+  <div class = "col-md-6 col-md-offset-3">
+    <%= form_for [:admin, @category] do |f| %>
+      <%= render "shared/error_messages", object: f.object %>
+      <%= f.label :name %>
+      <%= f.text_field :name, required: true %>
+      <%= f.submit (t "add"), class: "btn btn-primary add_cate" %>
+    <% end %>
+  </div>
+</div>
