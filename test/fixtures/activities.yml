@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  action_id: 1
   action_name: MyString
-  User: one
+  target_id: 1
+  target_type: MyString
+  user: one
 
 two:
-  action_id: 1
   action_name: MyString
-  User: two
+  target_id: 1
+  target_type: MyString
+  user: two
