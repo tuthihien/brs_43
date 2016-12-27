@@ -1,0 +1,38 @@
+<div class = "col-md-8 col-md-offset-2 admin_cate">
+  <table>
+    <caption><h2><%= t "all_categories" %></h2></caption>
+    <tr>
+      <th><%= t "stt" %>
+      <th><%= t "name" %></th>
+      <th colspan = "2"><%= t "action" %></th>
+    </tr>
+    <% @categories.each_with_index do |category, index| %>
+      <tr>
+        <td>
+          <% params[:page] ||= Settings.params_page %>
+          <%= index_continue params[:page], index, Settings.per_page %>
+        </td>
+        <td><%= category.name %></td>
+        <td><%= link_to t("edit"), edit_admin_category_path(category) %></td>
+        <td>
+          <%= link_to t("delete"), admin_category_path(category), method: :delete,
+            data: {confirm: t("sure")} %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+  <button type = "button" class = "btn btn-info" data-toggle = "modal"
+    data-target = "#myModalCat"><%= t "new_category" %></button>
+</div>
+<div id = "myModalCat" class = "modal fade" role = "dialog">
+  <div class = "modal-dialog">
+    <div class = "modal-content">
+      <%= render "shared/form_category" %>
+      <div class = "modal-footer">
+        <button type = button" class = "btn btn-default"
+          data-dismiss = "modal"><%= t "close" %></button>
+      </div>
+    </div>
+  </div>
+</div>
+<%= will_paginate %>

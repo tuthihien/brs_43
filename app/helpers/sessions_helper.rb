@@ -23,4 +23,10 @@ module SessionsHelper
     session.delete :user_id
     @current_user = nil
   end
+
+  def is_admin
+    if logged_in?
+      @is_admin  ||= current_user.is_admin
+    end
+  end
 end
