@@ -79,3 +79,5 @@ en:
   note: "No data"
   load_book_error: "Load book error"
   load_category_error: "Load category error"
+  error_load_user: "User not found"
+  error_destroy: "Error delete"
