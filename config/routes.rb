@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post "login" => "sessions#create"
   delete "logout" => "sessions#destroy"
   resources :users
+  resources :reviews
   namespace :admin do
     resources :books
     resources :categories

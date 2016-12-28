@@ -1,0 +1,16 @@
+<h2><%= t "name_form" %></h2>
+<%= form_for @review do |r| %>
+  <%= r.label :title %>
+  <%= r.text_field :title, required: true, class: "form-control" %>
+
+  <%= r.label :content_review %>
+  <%= r.text_area :content_review, required: true, class: "form-control" %>
+
+  <% if key.nil? %>
+    <%= r.hidden_field :book_id, value: key2.book_id %>
+  <% else %>
+    <%= r.hidden_field :book_id, value: key.id %>
+  <% end %>
+
+  <%= r.submit t("post"), class: "btn btn-primary" %>
+<% end %>

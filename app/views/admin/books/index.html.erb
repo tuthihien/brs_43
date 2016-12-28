@@ -13,7 +13,7 @@
         <td><%= book.title %></td>
         <td><%= book.author %></td>
         <td><%= book.num_page %></td>
-        <td class="img_view" ><%= image_tag book.image %></td>
+        <td class="img-view" ><%= image_tag book.image %></td>
         <td><%= link_to t("edit"), edit_admin_book_path(book) %></td>
         <td>
           <%= link_to t("delete"), admin_book_path(book), method: :delete,

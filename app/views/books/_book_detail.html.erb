@@ -1,0 +1,62 @@
+<div id="templatemo-content-right">
+  <div class="col-md-12">
+    <div class="col-md-5 img-detail">
+      <%= image_tag book_detail.image %>
+    </div>
+    <div class="col-md-7 detail-product">
+      <h3><%= book_detail.title %></h3>
+      <p><%= t "author" %><%= book_detail.author %></p>
+      <p><%= t "date_publish" %>
+        <%= l book_detail.publish_date, format: :short %></p>
+      <p><%= t "num_page" %><%= book_detail.num_page %></p>
+      <% if logged_in? %>
+        <button id="select-review" type="button" class="btn btn-info btn-lg"
+          data-toggle="modal" data-target="#myModal1"><%= t "open" %></button>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12">
+  <div class="">
+    <div class="modal fade" id="myModal1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="">
+            <div class="review col-md-12" id="form-review">
+              <%= render partial: "shared/form_review",
+                locals: {key: book_detail, key2: nil} %>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default"
+              data-dismiss="modal">
+              <%= t "close" %></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-12 review">
+  <% book_detail.reviews.order_by_date.each do |review| %>
+    <div class="user-review">
+      <%= link_to gravatar_for(review.user, Settings.size_user), review.user %>
+      <%= link_to review.user.username, review.user %>
+    </div>
+    <div class="content-review">
+      <span><%= link_to review.title %></span>
+      <p><%= review.content_review %></p>
+      <div class="action">
+        <% if current_user?(review.user) %>
+          <%= link_to t("edit"), edit_review_path(review.id) %>
+          <%= link_to t("delete"), review_path(review), method: :delete,
+            data: {confirm: t("answer_del")}%>
+        <% end %>
+      </div>
+      <p class="time">
+        <%= l review.created_at, format: :short %></p>
+      </p>
+    </div>
+    <div class="clr"></div>
+  <% end %>
+</div>

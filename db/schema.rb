@@ -93,7 +93,6 @@ ActiveRecord::Schema.define(version: 20161227033225) do
     t.datetime "updated_at", null: false
     t.index ["book_id"], name: "index_requests_on_book_id"
     t.index ["user_id", "book_id", "created_at"], name: "index_requests_on_user_id_and_book_id_and_created_at"
-    t.index ["user_id", "created_at"], name: "index_requests_on_user_id_and_created_at"
     t.index ["user_id"], name: "index_requests_on_user_id"
   end
 
