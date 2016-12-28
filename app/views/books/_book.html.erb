@@ -1,0 +1,28 @@
+<div id="templatemo-content-right">
+  <div id="menu-cate">
+    <% if @category.nil? %>
+      <span><%= t ("all_book") %></span>
+    <% else %>
+      <span><%= @category.name %></span>
+    <% end %>
+  </div>
+  <% if key.any? %>
+    <% key.each do |book| %>
+      <div class="col-md-6 product-item">
+        <h1><%= book.title %></h1>
+        <%= image_tag book.image %>
+        <div class="product-info">
+          <p><%= t "author" %><%= book.author %></p>
+          <div class="detail-button">
+            <%= link_to t("detail"), book_path(book) %>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </div>
+    <% end %>
+  <% else %>
+    <div id="error-data">
+      <h2><%= t "note" %></h2>
+    </div>
+  <% end %>
+</div>

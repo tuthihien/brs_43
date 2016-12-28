@@ -1,6 +1,6 @@
 class Admin::BooksController < ApplicationController
   before_action :load_book, only: [:edit, :update, :destroy]
-  before_action :load_category, only: [:new, :edit]
+  before_action :load_category, only: [:new, :edit, :index]
 
   def index
     @books = Book.order_alphabet.paginate(

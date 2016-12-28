@@ -1,9 +1,10 @@
 <div class="templatemo-content-left-section">
   <h1><%= t "categories" %></h1>
   <ul>
-    <li><a href="#"><%= t "novel" %></a></li>
-    <li><a href="#"><%= t "fiction" %></a></li>
-    <li><a href="#"><%= t "novel" %></a></li>
-    <li><a href="#"><%= t "fiction" %></a></li>
+    <% @categories.each do |categories| %>
+      <li>
+        <%= link_to categories.name, category_path(categories) %>
+      </li>
+    <% end %>
   </ul>
 </div>
