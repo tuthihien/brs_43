@@ -12,3 +12,4 @@ max_length_num_page: 4
 max_length_rate: 1
 min_rate: 1
 max_rate: 5
+gravatar_follow: 20
