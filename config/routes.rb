@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :books
     resources :categories
+    resources :users, only: :destroy
   end
   resources :books
   resources :categories
