@@ -1,1 +1,15 @@
 <%= render partial: "books/book_detail", locals: {book_detail: @book} %>
+<% if logged_in? %>
+  <h4><%= t "rating" %></h4>
+  <% if @value_rate.present? %>
+    <div id="rateit_star1" data-rateit-readonly="true"
+      data-rateit-value="<%= @value_rate.num_rate %>"></div>
+  <% else %>
+    <div id="rateit_star1"></div>
+  <% end %>
+  <%= form_for @rate, remote: true do |f| %>
+    <%= f.hidden_field :num_rate, id: :star_rs %>
+    <%= f.hidden_field :book_id, value: @book.id %>
+  <% end %>
+  <%= t "ratings"%> <%= "#{@avg_rating}" %>
+<% end %>

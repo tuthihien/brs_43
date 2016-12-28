@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   resources :books
   resources :categories
   resources :search_books, only: :create
+  resources :rates
 end

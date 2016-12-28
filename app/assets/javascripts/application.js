@@ -15,3 +15,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).on('turbolinks:load', function() {
+  $(function() { $('div.rateit, span.rateit').rateit(); });
+  $(function() {
+    $('#rateit_star1').rateit({min: 0, max: 10, step: 1});
+    $('#rateit_star1').bind('rated', function(e) {
+      var ri = $(this);
+      var value = ri.rateit('value');
+      alert(value);
+      ri.rateit('readonly', true);
+      $('#star_rs').val(value);
+      $('#new_rate').submit();
+    });
+  });
+});
