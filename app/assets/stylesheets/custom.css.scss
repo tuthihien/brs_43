@@ -1,6 +1,6 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-body{
+body {
   margin: 0;
   padding: 0;
   line-height: 1.5em;
@@ -11,34 +11,34 @@ body{
 }
 a:link, a:visited { color: #e6e154; text-decoration: none; font-weight: bold;}
 a:active, a:hover { color: #e6e154; text-decoration: underline;}
-p{
+p {
   margin: 0px;
   padding: 0px;
 }
-img{
+img {
   margin: 0px;
   padding: 0px;
   border: none;
 }
-.cleaner{
+.cleaner {
   clear: both;
   width: 100%;
   height: 1px;
   font-size: 1px;
 }
-.cleaner-with-height{
+.cleaner-with-height {
   clear: both;
   width: 100%;
   height: 30px;
   font-size: 1px;
 }
-.cleaner-with-width{
+.cleaner-with-width {
   float: left;
   width: 20px;
   height: 30px;
   font-size: 1px;
 }
-.buy-now-button a{
+.buy-now-button a {
   clear: both;
   text-align: center;
   display: block;
@@ -50,7 +50,7 @@ img{
   font-weight: bold;
   text-decoration: none;
 }
-.detail-button a{
+.detail-button a {
   clear: both;
   text-align: center;
   display: block;
@@ -62,28 +62,28 @@ img{
   font-weight: bold;
   text-decoration: none;
 }
-#templatemo-container{
+#templatemo-container {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   background: #1c1c1b url(templatemo_bg.jpg) repeat-y;
 }
 /* menu */
-#templatemo-menu{
+#templatemo-menu {
   clear: both;
   width: 948px;
   height: 45px;
   background: url(templatemo_menu_bg.jpg) no-repeat;
 }
-#templatemo-menu ul{
+#templatemo-menu ul {
   padding: 13px 0 0 0;
   margin: 0;
   list-style: none;
 }
-#templatemo-menu ul li{
+#templatemo-menu ul li {
   display: inline;
 }
-#templatemo-menu ul li a{
+#templatemo-menu ul li a {
   float: left;
   padding: 0 20px;
   font-size: 12px;
@@ -92,12 +92,12 @@ img{
   text-decoration: none;
   color: #969547;
 }
-#templatemo-menu li a:hover, #templatemo-menu li .current{
+#templatemo-menu li a:hover, #templatemo-menu li .current {
   color: #fcf88e;
 }
 /* end of menu*/
 /* header */
-#templatemo-header{
+#templatemo-header {
   clear: both;
   width: 960px;
   height: 285px;
@@ -105,149 +105,149 @@ img{
   margin: 0;
   background: url(templatemo_header_bg.jpg) no-repeat;
 }
-#templatemo-header a, a:hover{
+#templatemo-header a, a:hover {
   color: #ffffff;
 }
-#templatemo-header #templatemo-special-offers{
+#templatemo-header #templatemo-special-offers {
   float: left;
   font-size: 14px;
   margin-top: 95px;
   margin-left: 490px;
   width: 180px;
 }
-#templatemo-special-offers a{
+#templatemo-special-offers a {
   font-size: 12px;
 }
-#templatemo-special-offers  p{
+#templatemo-special-offers  p {
   margin: 0 0 20px 0;
 }
-#templatemo-special-offers p span{
+#templatemo-special-offers p span {
   font-size: 18px;
 }
-#templatemo-header #templatemo-new-books{
+#templatemo-header #templatemo-new-books {
   float: left;
   margin-top: 90px;
   margin-left: 55px;
   width: 180px;
 }
-#templatemo-new-books ul{
+#templatemo-new-books ul {
    margin: 0 0 10px 0;
    padding: 0 0 0 20px;
 }
-#templatemo-new-books li{
+#templatemo-new-books li {
    margin: 0;
    padding: 0;
 }
 /* end of header */
 /* content */
-#templatemo-content{
+#templatemo-content {
   clear: both;
   width: 920px;
   padding: 0 20px;
 }
-#templatemo-content #templatemo-content-left{
+#templatemo-content #templatemo-content-left {
   margin-top: 20px;
   float: left;
   padding: 10px;
   background-color: #171716;
   border: 1px solid #212120;
 }
-#templatemo-content #templatemo-content-right{
+#templatemo-content #templatemo-content-right {
   margin-top: 20px;
   float: right;
   width: 100%;
 }
-#templatemo-content-left .templatemo-content-left-section{
+#templatemo-content-left .templatemo-content-left-section {
   clear: both;
   padding-bottom: 10px;
   border-bottom: 1px solid #2b2b2a;
   margin-bottom: 20px;
 }
-.templatemo-content-left-section h1{
+.templatemo-content-left-section h1 {
   font-size: 14px;
   color: #cbc750;
   padding: 0 0 5px 0;
   margin: 0 0 10px 0;
   border-bottom: 1px dotted #cbc750;
 }
-.templatemo-content-left-section ul{
+.templatemo-content-left-section ul {
   padding: 0;
   margin: 0;
 }
-.templatemo-content-left-section ul li{
+.templatemo-content-left-section ul li {
   padding: 0 0 3px 10px;
   list-style: none;
 }
-.templatemo-content-left-section ul li a{
+.templatemo-content-left-section ul li a {
   font-weight: bold;
   text-decoration: none;
   color: #969547;
   font-size: 14px;
 }
-.templatemo-content-left-section li a:hover, .templatemo-content-left-section li .current{
+.templatemo-content-left-section li a:hover, .templatemo-content-left-section li .current {
   color: #fcf88e;
 }
-#templatemo-content-right .templatemo-product-box{
+#templatemo-content-right .templatemo-product-box {
   float: left;
   width: 303px;
   height: 210px;
   padding: 10px;
   border: 1px solid #333;
 }
-#templatemo-content-right h1{
+#templatemo-content-right h1 {
   padding: 10px;
   margin: 0 0 20px 0;
   font-size: 15px;
   color: #cbc750;
   background: url(templatemo_h1_bg.jpg);
 }
-#templatemo-content-right h2{
+#templatemo-content-right h2 {
   padding: 0 0 0 0;
   margin: 0 0 20px 0;
   font-size: 12px;
   color: #e6e154;
 }
-#templatemo-content-right h3{
+#templatemo-content-right h3 {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 18px;
   color: #85391f;
 }
-#templatemo-content-right ul{
+#templatemo-content-right ul {
   margin: 0 0 20px 0;
   padding: 0 0 0 20px;
   list-style: none;
 }
-#templatemo-content-right li{
+#templatemo-content-right li {
   padding: 0 0 3px 0;
 }
-#templatemo-content-right .image-panel{
+#templatemo-content-right .image-panel {
   float: left;
   width: 100px;
   margin-right: 20px;
 }
-#templatemo-content-right p{
+#templatemo-content-right p {
   text-align: justify;
   padding: 0 0 8px 0;
 }
-.templatemo-product-box h1 span{
+.templatemo-product-box h1 span {
   font-weight: normal;
 }
-.templatemo-product-box img{
+.templatemo-product-box img {
   float: left;
   margin-right: 10px;
 }
-.product-info{
+.product-info {
   float: right;
   width: 55%;
 }
-.product-info p{
+.product-info p {
   margin-bottom: 15px;
 }
 /* end of content */
 
 /* footer */
-#templatemo-footer{
+#templatemo-footer {
   clear: both;
   width: 948px;
   padding: 20px 0px 20px 0;
@@ -257,184 +257,188 @@ img{
   background-color: #111110;
   margin-top: 58% !important;
 }
-#templatemo-footer a{
+#templatemo-footer a {
   color: #fff;
   font-weight: normal;
 }
 /* end of footer */
-.item-menu{
+.item-menu {
   float: right;
 }
-.img-detail img{
+.img-detail img {
   width: 200px;
   height: 250px;
 }
-.clr{
+.clr {
   clear: both;
 }
-.product-item{
+.product-item {
   margin-bottom: 20px;
+  img {
+   width: 100px;
+   height: 150px;
+  }
 }
-.detail-product{
-  .icon-button{
+.detail-product {
+  .icon-button {
   margin-top: 50px;
   }
-  a{
+  a {
   margin-right: 20px;
   }
 }
-.detail-product a i{
+.detail-product a i {
   font-size: 30px;
   color: white;
 }
-.detail-product a i:hover{
+.detail-product a i:hover {
   color: red;
 }
-.review{
+.review {
   margin-top: 30px;
-  h2{
+  h2 {
   background: none !important;
    text-align: center;
   }
-  .form-group label{
+  .form-group label {
   display: block;
   }
-  .form-group textarea{
+  .form-group textarea {
   width: 100%;
   height: 200px;
   color: black;
   }
 }
-.navbar-form{
+.navbar-form {
   margin-top: -7px;
 }
-#form-review{
+#form-review {
   color: black;
-  textarea{
+  textarea {
   font-size: 13px;
   }
-  label{
+  label {
   font-size: 14px;
   }
 }
-#select-review{
+#select-review {
   height: 30px;
   line-height: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#signup-btn, #login-btn{
+#signup-btn, #login-btn {
   padding: 3px 10px;
   margin-top: -5px;
   font-size: 15px;
   border-radius: 6px;
   margin-right: 5px;
 }
-.signup-input, .login-input{
+.signup-input, .login-input {
   width: 80%;
   display: block;
 }
-.signup-label{
+.signup-label {
   color: #cbc750;
   display: block;
   margin-left: 0px;
 }
-.login-label{
+.login-label {
   color: black;
 }
-.remember{
+.remember {
   color: black;
   display: block;
 
 }
-.signup-btn{
+.signup-btn {
   margin-top: 20px;
 }
-.login-btn{
+.login-btn {
   margin-left: 100px;
   margin-top: 20px;
 }
-.check-box{
+.check-box {
   margin-left: 0px !important;
 }
-.remember{
+.remember {
   padding-left: 20px;
   padding-top: 3px;
 }
-.new-user{
+.new-user {
   color: black;
   display: inline;
-  a{
+  a {
    padding: 0px !important;
   }
   margin-top: 20px;
 }
-.modal-header{
+.modal-header {
   color: black;
 }
-.alert-success{
+.alert-success {
   background-color: none !important;
 }
-.alert-danger{
+.alert-danger {
   background-color: none !important;
 }
-.signup{
+.signup {
   margin-left: 150px;
 }
-#error-explanation{
+#error-explanation {
   color: red;
-  ul {
+  ul  {
     color: red;
     margin: 0 0 30px 0;
   }
 }
-.field-with-errors{
+.field-with-errors {
   @extend .has-error;
-  .form-control{
+  .form-control {
     color: $state-danger-text;
   }
 }
-#templatemo-menu ul .item-link a:hover{
+#templatemo-menu ul .item-link a:hover {
   background-color: black !important;
 }
-#templatemo-menu ul .item-link a{
+#templatemo-menu ul .item-link a {
   width: 100%;
 }
 .users {
   list-style: none;
   margin: 0;
-  li {
+  li  {
     overflow: auto;
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
 }
-.admin-cate{
+.admin-cate {
   margin-top: 20px;
-  table th, table td{
+  table th, table td {
     height: 30px;
     border: 1px solid white;
     padding: 10px;
     width: 100px;
   }
 }
-#myModal4{
+#myModal4 {
   color: black;
-  h3{
+  h3 {
     text-align: center;
   }
-  label, input{
+  label, input {
     font-size: 12px;
     height: 25px;
   }
-  .add-cate{
+  .add-cate {
     margin-left: 43%;
   }
 }
-.title-th{
+.title-th {
   width: 200px;
 }
-.select-css{
+.select-css {
   display: block;
   width: 100%;
   height: 35px;
@@ -442,7 +446,7 @@ img{
   color: black;
   font-size: 13px;
 }
-.img-view img{
+.img-view img {
   width: 150px;
   height: 100px;
 }
@@ -455,92 +459,97 @@ img{
     border-bottom: 1px solid $gray-lighter;
   }
 }
-#menu-cate{
+#menu-cate {
   margin-left: 16px;
   margin-top:20px;
   margin-bottom: 30px;
-  span{
+  span {
     font-size: 30px;
     margin-left: 28%;
     color: Blue;
     font-weight: bold;
   }
 }
-#error-data{
+#error-data {
   margin-top: 20px;
-  h2{
+  h2 {
     text-align: center;
   }
 }
-.review{
+.review {
   margin-top: 30px;
-  .content-review{
-    span{
+  .content-review {
+    span {
       font-weight: bold;
       font-size: 14px;
-      a:hover{
+      a:hover {
         color: red;
       }
     }
-    .time{
+    .time {
       color: #0975B5;
       display: block;
     }
-    .action{
-      a{
+    .action {
+      a {
         font-size: 11px !important;
       }
     }
   }
-  .user-review{
+  .user-review {
     width: 80px;
     float: left;
     margin-right: 10px;
     margin-bottom: 20px;
-    a{
+    a {
       display: block;
       width: 100%;
     }
   }
-  .time{
+  .time {
     margin-bottom: 20px;
     margin-left: 89px;
   }
 }
-a:hover{
+a:hover {
   text-decoration: none;
 }
-.profile{
+.profile {
   margin-top: 20px;
 }
-.like{
+.like {
   margin: -15px 0px 20px 20px;
-  .num-like{
+  .num-like {
     width: 10%;
     float: left;
-    span{
+    span {
       color: gray;
       font-size: 13px;
     }
   }
-  .icon-like{
+  .icon-like {
     font-size: 15px;
-    a:hover{
+    a:hover {
       color: red;
     }
   }
 }
-.icon-like button{
+.icon-like button {
   border: none;
   background: none;
 }
-.icon-like button:hover{
+.icon-like button:hover {
   color: #0A75B9;
 }
-table td, th{
+table td, th {
   border: 1px solid;
   padding: 10px;
 }
-#myModalCat{
+#myModalCat {
   color: black;
+}
+.edit-book {
+  img {
+    width: 350px;
+  }
 }
