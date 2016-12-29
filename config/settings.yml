@@ -4,3 +4,4 @@ size_limit: 400
 size_image: 5
 params_page: 1
 size_user: 40
+type: category

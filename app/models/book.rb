@@ -14,4 +14,8 @@ class Book < ApplicationRecord
       errors.add :image, t("error_image")
     end
   end
+
+  scope :find_of_diffrent_category, -> type, keyword do
+    where "#{type} like ?", "%#{keyword}%"
+  end
 end
