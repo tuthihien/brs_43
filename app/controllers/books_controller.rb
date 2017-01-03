@@ -7,5 +7,8 @@ class BooksController < ApplicationController
       flash[:danger] = t "load_book_error"
       redirect_to root_url
     end
+    @value_rate = Rate.rates_of_book(params[:id]).find_by user_id: current_user.id if logged_in?
+    @rate = Rate.new
+    @avg_rating = @book.avg_rate
   end
 end
