@@ -553,3 +553,29 @@ table td, th {
     width: 350px;
   }
 }
+#select-search {
+  color:black;
+  font-weight: bold;
+  height: 26px;
+  width: 80px;
+}
+.search-form {
+  input {
+    color: black;
+    height: 26px;
+    border-radius: 5px;
+  }
+  form {
+    margin-top: -3px;
+  }
+}
+#type {
+  color: black;
+  height: 24px;
+  width: 80px;
+}
+.book-result {
+  img {
+    margin-bottom: 20px;
+  }
+}

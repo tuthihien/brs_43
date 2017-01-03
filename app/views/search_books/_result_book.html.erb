@@ -1,0 +1,19 @@
+<% if books.any? %>
+  <div class="book-result">
+    <% books.each do |book| %>
+      <div class="col-md-12">
+        <div class="col-md-5 img-detail">
+          <%= image_tag book.image %>
+        </div>
+        <div class="col-md-7 detail-product">
+          <h3><%= link_to book.title, book_path(book.id) %></h3>
+          <p><%= t "author" %><%= book.author %></p>
+          <p><%= t "date_publish" %><%= book.publish_date %></p>
+          <p><%= t "num_page" %><%= book.num_page %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <h2><%= t "error_search" %></h1>
+<% end %>
