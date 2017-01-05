@@ -6,6 +6,13 @@ class Book < ApplicationRecord
   has_many :requests, dependent: :destroy
   mount_uploader :image, ImageUploader
 
+  validates :title, presence: true
+  validates :author, presence: true
+  validates :num_page, presence: true,
+    length: {in: Settings.min_length_num_page..Settings.max_length_num_page}
+  validates :rate, presence: true, length: {minimum: Settings.max_length_rate}
+  validates :publish_date, presence: true
+
   scope :order_alphabet, -> {order title: :ASC}
 
   def avg_rate
