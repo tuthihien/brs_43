@@ -578,6 +578,7 @@ table td, th {
   img {
     margin-bottom: 20px;
   }
+}
 .rateit {
   display: -moz-inline-box;
   display: inline-block;
@@ -696,4 +697,10 @@ table td, th {
   background: #e6574b; /* Old browsers */
   background: radial-gradient(ellipse at center, #e6574b 55%,#f6836b 77%,#f9d3cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-position: 0 0;
+}
+.admin-book select {
+  display: block;
+  width: 100%;
+  height: 35px;
+  color: black;
 }

@@ -1,6 +1,6 @@
 class Admin::BooksController < ApplicationController
   before_action :load_book, only: [:edit, :update, :destroy]
-  before_action :load_category, only: [:new, :edit, :index]
+  before_action :load_category, expect: :destroy
 
   def index
     @books = Book.order_alphabet.paginate(
@@ -17,7 +17,8 @@ class Admin::BooksController < ApplicationController
       flash[:success] = t "add_book_success"
       redirect_to admin_books_path
     else
-      redirect_to new_admin_book_path
+      flash[:danger] = t "error"
+      render :new
     end
   end
 
@@ -30,7 +31,7 @@ class Admin::BooksController < ApplicationController
       redirect_to admin_books_path
     else
       flash[:danger] = t "error"
-      redirect_to edit_admin_book_path
+      render :edit
     end
   end
 

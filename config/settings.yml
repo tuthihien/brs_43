@@ -5,3 +5,10 @@ size_image: 5
 params_page: 1
 size_user: 40
 type: category
+max_num_page: 5000
+min_num_page: 20
+min_length_num_page: 2
+max_length_num_page: 4
+max_length_rate: 1
+min_rate: 1
+max_rate: 5
