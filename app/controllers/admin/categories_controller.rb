@@ -8,13 +8,16 @@ class Admin::CategoriesController < ApplicationController
   end
 
   def create
-    @category = Category.new category_params
-    if @category.save
-      flash[:success] = t "create_category"
-      redirect_to admin_categories_path
-    else
-      render :new
+    was_created = false
+    @category = Category.find_or_create_by category_params do
+      was_created = true
     end
+    if was_created
+      flash[:success] = t "create_category"
+    else
+      flash[:danger] = t "category_exist"
+    end
+    redirect_to :back
   end
 
   def edit

@@ -103,3 +103,5 @@ en:
   rate_not_found: "Rate not found"
   rating: "Rating"
   ratings: "Ratings:"
+  category_exist: "Category exist"
+  category_not_create: "Category Not Create"
